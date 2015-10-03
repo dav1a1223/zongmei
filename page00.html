@@ -5,22 +5,32 @@
 	<meta charset="utf-8"/>
 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.cycle.lite.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<style>
 	body {
-  		margin: 0 auto;
+  		margin: 0;
   		background-color: black;
   		background-image: url(sprinkles.png);
   		background-repeat: repeat;
 	}
 	</style>
+	<script type="text/javascript">
+ 		jQuery(document).ready(function($) {   
+			$('#slider').cycle({   
+          			fx:    'fade',  //特效           speed:  7500,
+          			timeout:  2500,
+         			 random:  1
+        	 });
+ 		}); 
+ 	</script>
 </head>
 <body>
 <header>
 	<a href="index.html"><img src="logo.png" alt="logo.."></a>
 	<ul class="nav nav-pills nav-justified">
-		<li role="presentation"><a href="page00.html"><strong>榮美店鋪</strong></a></li>
+		<li role="presentation"><a href="page00.html" style="background-color: #847C58; color: white;"><strong>榮美店鋪</strong></a></li>
   		<li role="presentation"><a href="page01.html"><strong>繡學號</strong></a></li>
   		<li role="presentation"><a href="page02.html"><strong>繡花車臂章</strong></a></li>
   		<li role="presentation"><a href="page03.html"><strong>修改衣服</strong></a></li>
@@ -46,22 +56,15 @@
 
 		</div>
 		<div class="colright">
-			<div class="about"><b>關於榮美</b></div>
-			<img src="shop.jpg" alt="shop">
-			<p>榮美提供學生制服繡學號優惠、繡圖車臂章、外套T恤、運動服裝、公司制服行號繡字服務、公司行號團體服、校園班系服球服、圍裙繡字、帽子繡字均可，以及牛頭牌運動鞋及各類鞋款販賣，種類眾多。<span style="color: red">字美價廉</span>。<br></p>
-			<p style="margin-top: 10px; margin-right: 20px; margin-bottom: 30px;">
-			並備有平車及車布邊機，提供各類服飾修改。學生褲改窄。百折裙改短。西裝褲、外套、換拉鍊等。<span style="color: red">專業細心</span>。
-			</p>
-			<div class="about"><b>服務項目</b></div>
-			<ul>
-				<li>繡學號</li>
-				<li>繡花繡字</li>
-				<li>換拉鍊</li>
-				<li>修改衣服</li>
-				<li>車布邊、名牌</li>
-				<li>牛仔褲縫補</li>
-				<li>販售各類鞋子</li>	
-			</ul>
+			<div class="about"><a href="index.html"  style="color: white">首頁</a>  >  榮美店鋪</div>
+			<div id="slider">
+				<img src="./img/page0/01.png" alt="01">
+				<img src="./img/page0/02.jpg" alt="02">
+				<img src="./img/page0/03.jpg" alt="03">
+				<img src="./img/page0/04.jpg" alt="01">
+				<img src="./img/page0/05.jpg" alt="02">
+				<img src="./img/page0/06.jpg" alt="03">
+			</div>
 		</div>
 	</div>
 	<footer>© 2015 榮美百貨鞋行|繡學號. All Rights Reserved.
