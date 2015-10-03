@@ -94,6 +94,7 @@ html {
       -ms-text-size-adjust: 100%;
 }
 header {
+    max-width: 1000px;
     height: 110px;
     padding-right: 15px;
     padding-left: 15px;
