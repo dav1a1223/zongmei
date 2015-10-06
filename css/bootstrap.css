@@ -17,7 +17,8 @@ table {
   display: block;
 }
 #slider img{
-  width: 350px; 
+  margin-left: 80px;
+  width: 380px; 
   height: 250px;
 }
 .about {
